@@ -4,7 +4,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+
 }
+
 /**Variaveis*/
 :root {
   --blue: #3ea1db;
@@ -18,7 +20,7 @@
 .inicio {
   width: 100vw;
   height: 130px;
-  background-color: var(--blue-dark);
+  background:var(--linear)
 }
 .nav {
   display: flex;
@@ -38,16 +40,16 @@
   left: 0;
   top: 0;
   width: 100%;
+  font-size: 1.1rem;
+  
 }
 .busca {
   left: 12px;
   text-indent: initial;
   display: block;
-  position: absolute;
-  
+  position: absolute;  
 }
 label[for="pesquisa"] {
-  background-color: lightblue;
   display: flex;
   place-items: center;
   position: relative;
@@ -55,5 +57,5 @@ label[for="pesquisa"] {
   width: 752px;
   text-indent: -300px;
   padding: 12px;
-  overflow: hidden;
+  overflow: hidden; 
 }
