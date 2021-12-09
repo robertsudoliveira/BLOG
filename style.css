@@ -7,7 +7,7 @@
 
 }
 
-/**Variaveis*/
+/** Variaveis */
 :root {
   --blue: #3ea1db;
   --blue-dark: #574ae8;
@@ -17,45 +17,136 @@
   --linear: linear-gradient(90deg, #574ae8 0%, #3ea1db 100%);
 }
 
+/** Cabeçalho */
 .inicio {
-  width: 100vw;
-  height: 130px;
-  background:var(--linear)
+  width: 100%;
+  height: 200px;
+  background: var(--linear);
+} /**box do header*/
+.box {
+  margin: 0 auto;
+  width: 900px;
 }
+/** News Letter  BLOG */
 .nav {
   display: flex;
+  justify-content: space-between;
   list-style: none;
-  justify-content: space-around;
   color: var(--white);
   font-weight: bold;
-  padding-top: 30px;
+  padding-top: 5%;
 }
+/** Pesquisa motor de busca */
+.text-center{
+  left: 50%;
+  position: absolute;
+  z-index: -1;
+}
+/** Conteudo Principal */
 #pesquisa {
   height: 100%;
+  width: 900px;
   border-radius: 4px;
   outline: none;
   border: 1px solid var(--blue);
-  padding: 0px 12px 0px 48px; /** 0 top, 12 right, 0 bottom, 30 left*/
-  position: absolute;
+  background-color: var(--linear);
+  padding: 24px 24px 24px 48px; /** 0 top, 12 right, 0 bottom, 30 left*/
   left: 0;
-  top: 0;
-  width: 100%;
   font-size: 1.1rem;
+  color: var(--white);
+}
+/** Label */
+.zoom {
+  width: 900px;
   
 }
-.busca {
+/** Logo da img */
+.logo {
   left: 12px;
   text-indent: initial;
   display: block;
-  position: absolute;  
+  position: absolute;
 }
+/** Formatação do input*/
 label[for="pesquisa"] {
   display: flex;
   place-items: center;
   position: relative;
   margin: 20px auto 0px;
-  width: 752px;
+  width: 100%;
   text-indent: -300px;
-  padding: 12px;
-  overflow: hidden; 
+}
+/** coloração da cor do input */
+input::placeholder {
+  color: #fff;
+}
+/** */
+.conteudo {
+  background-color: #eee;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #eee;
+}
+/** Card */
+.caixa {
+  height: 195px;
+  width: 900px;
+  background-color: #fff;
+  margin-top: 40px;
+  padding: 20px;
+}
+/** ultimo card */
+.caixa:last-child {
+  margin-bottom: 20px;
+}
+/** DATA + LOGO */
+.navegacao {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  color: var(--text);
+  padding: 10px;
+}
+/** Titulo das mensagens*/
+.titulo {
+  padding: 10px 10px;
+  font-size: 22px;
+  color: var(--title);              
+}
+/** Paragrafos*/
+.paragrafo {
+  color: var(--text);
+  padding: 0px 0px 0px 10px;
+}
+
+/**Primeiro break point*/
+@media (max-width: 600px) {
+  .nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 40%;
+    justify-content: center;
+  }
+  #pesquisa {
+    width: 40%;
+  }
+
+  .inicio {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .conteudo {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
