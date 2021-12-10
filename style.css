@@ -25,7 +25,7 @@
 } /**box do header*/
 .box {
   margin: 0 auto;
-  width: 900px;
+  width: 56.25rem;
 }
 /** News Letter  BLOG */
 .nav {
@@ -45,24 +45,24 @@
 /** Conteudo Principal */
 #pesquisa {
   height: 100%;
-  width: 900px;
+  width: 56.25rem;
   border-radius: 5px;
   outline: none;
   border: 1px solid var(--blue);
   background-color: rgba(255, 255, 255, 0.2);
-  padding: 24px 24px 24px 48px; /** 0 top, 12 right, 0 bottom, 30 left*/
+  padding: 1.5rem 1.5rem 1.5rem 3rem; /** 0 top, 12 right, 0 bottom, 30 left*/
   left: 0;
   font-size: 1.1rem;
   color: var(--white);
 }
 /** Label */
 .zoom {
-  width: 900px;
+  width: 56.25rem;
   
 }
 /** Logo da img */
 .logo {
-  left: 12px;
+  left: 0.75rem;
   text-indent: initial;
   display: block;
   position: absolute;
@@ -72,9 +72,9 @@ label[for="pesquisa"] {
   display: flex;
   place-items: center;
   position: relative;
-  margin: 20px auto 0px;
+  margin: 1.25rem auto 0px;
   width: 100%;
-  text-indent: -300px;
+  text-indent: -18.75rem;
 }
 /** coloração da cor do input */
 input::placeholder {
@@ -93,21 +93,21 @@ input::placeholder {
   justify-content: space-evenly;
   align-items: center;
   height: 100%;
-  max-width: 900px;
+  max-width: 56.25rem;
   margin: 0 auto;
   background-color: #eee;
 }
 /** Card */
 .caixa {
-  height: 195px;
-  width: 900px;
+  height: 12.75rem;
+  width:56.25rem;
   background-color: #fff;
-  margin-top: 40px;
-  padding: 20px;
+  margin-top: 2.5rem;
+  padding: 1.5rem;
 }
 /** ultimo card */
 .caixa:last-child {
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
 }
 /** DATA + LOGO */
 .navegacao {
@@ -115,18 +115,18 @@ input::placeholder {
   justify-content: space-between;
   list-style: none;
   color: var(--text);
-  padding: 10px;
+  padding: 0.625rem;
 }
 /** Titulo das mensagens */
 .titulo {
-  padding: 10px 10px;
-  font-size: 22px;
+  padding: 0.625rem 0.625rem;
+  font-size: 1.3775rem;
   color: var(--title);              
 }
 /** Paragrafos */
 .paragrafo {
   color: var(--text);
-  padding: 0px 0px 0px 10px;
+  padding: 0px 0px 0px 0625rem;
 }
 
 /**Primeiro break point*/
