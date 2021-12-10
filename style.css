@@ -46,10 +46,10 @@
 #pesquisa {
   height: 100%;
   width: 900px;
-  border-radius: 4px;
+  border-radius: 5px;
   outline: none;
   border: 1px solid var(--blue);
-  background-color: var(--linear);
+  background-color: rgba(255, 255, 255, 0.2);
   padding: 24px 24px 24px 48px; /** 0 top, 12 right, 0 bottom, 30 left*/
   left: 0;
   font-size: 1.1rem;
@@ -80,13 +80,13 @@ label[for="pesquisa"] {
 input::placeholder {
   color: #fff;
 }
-/** */
+/** box que segura tudo */
 .conteudo {
   background-color: #eee;
   max-width: 100%;
   margin: 0 auto;
 }
-
+ /** Conteudo Principal */
 .container {
   display: flex;
   flex-direction: column;
@@ -117,36 +117,20 @@ input::placeholder {
   color: var(--text);
   padding: 10px;
 }
-/** Titulo das mensagens*/
+/** Titulo das mensagens */
 .titulo {
   padding: 10px 10px;
   font-size: 22px;
   color: var(--title);              
 }
-/** Paragrafos*/
+/** Paragrafos */
 .paragrafo {
   color: var(--text);
   padding: 0px 0px 0px 10px;
 }
 
 /**Primeiro break point*/
-@media (max-width: 600px) {
-  .nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 40%;
-    justify-content: center;
-  }
-  #pesquisa {
-    width: 40%;
-  }
-
-  .inicio {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .conteudo {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+@media (max-width: 800px) {
+  
+   
 }
