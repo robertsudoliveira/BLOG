@@ -20,7 +20,7 @@
 /** Cabeçalho */
 .inicio {
   width: 100%;
-  height: 200px;
+  height: 12.5rem;
   background: var(--linear);
 } /**box do header*/
 .box {
@@ -80,7 +80,7 @@ label[for="pesquisa"] {
 input::placeholder {
   color: #fff;
 }
-/** box que segura tudo */
+/** box que que segura o aninhamento */
 .conteudo {
   background-color: #eee;
   max-width: 100%;
@@ -99,15 +99,15 @@ input::placeholder {
 }
 /** Card */
 .caixa {
-  height: 195px;
+  height: 12rem;
   width: 900px;
   background-color: #fff;
-  margin-top: 40px;
-  padding: 20px;
+  margin-top: 2.5rem;
+  padding: 1.25rem;
 }
 /** ultimo card */
 .caixa:last-child {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 /** DATA + LOGO */
 .navegacao {
@@ -115,18 +115,18 @@ input::placeholder {
   justify-content: space-between;
   list-style: none;
   color: var(--text);
-  padding: 10px;
+  padding: 0.625rem;
 }
 /** Titulo das mensagens */
 .titulo {
-  padding: 10px 10px;
-  font-size: 22px;
+  padding: 0.625rem 0.625rem;
+  font-size: 1.375rem;
   color: var(--title);              
 }
 /** Paragrafos */
 .paragrafo {
   color: var(--text);
-  padding: 0px 0px 0px 10px;
+  padding: 0px 0px 0px 0.625rem;
 }
 
 /**Primeiro break point*/
