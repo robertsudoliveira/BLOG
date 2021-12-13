@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-
 }
 
 /** Variaveis */
@@ -23,6 +22,7 @@
   height: 12.5rem;
   background: var(--linear);
 } /**box do header*/
+
 .box {
   margin: 0 auto;
   width: 900px;
@@ -37,7 +37,7 @@
   padding-top: 5%;
 }
 /** Pesquisa motor de busca */
-.text-center{
+.text-center {
   left: 50%;
   position: absolute;
   z-index: -1;
@@ -45,7 +45,7 @@
 /** Conteudo Principal */
 #pesquisa {
   height: 100%;
-  width: 900px;
+  width: 100%;
   border-radius: 5px;
   outline: none;
   border: 1px solid var(--blue);
@@ -58,7 +58,6 @@
 /** Label */
 .zoom {
   width: 900px;
-  
 }
 /** Logo da img */
 .logo {
@@ -86,7 +85,7 @@ input::placeholder {
   max-width: 100%;
   margin: 0 auto;
 }
- /** Conteudo Principal */
+/** Conteudo Principal */
 .container {
   display: flex;
   flex-direction: column;
@@ -121,7 +120,7 @@ input::placeholder {
 .titulo {
   padding: 0.625rem 0.625rem;
   font-size: 1.375rem;
-  color: var(--title);              
+  color: var(--title);
 }
 /** Paragrafos */
 .paragrafo {
@@ -129,8 +128,68 @@ input::placeholder {
   padding: 0px 0px 0px 0.625rem;
 }
 
-/**Primeiro break point*/
-@media (max-width: 800px) {
-  
-   
+/**Primeiro breakpoint*/
+@media (max-width: 900px) {
+  .inicio {
+    min-width: 550px;
+  }
+  .box {
+    max-width: 600px;
+  }
+  .container {
+    max-width: 600px;
+  }
+  #pesquisa {
+    max-width: 600px;
+  }
+  .caixa {
+    max-width: 600px;
+  }
+  input {
+    max-width: 361px;
+  }
+  .zoom {
+    max-width: 600px;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+  }
+  .card {
+    max-width: 500px;
+  }
+}
+/** Segundo breakpoint */
+@media (max-width: 600px) {
+  .inicio {
+    min-width: 350px;
+  }
+  .box {
+    max-width: 350px;
+  }
+  .container {
+    max-width: 350px;
+  }
+  #pesquisa {
+    max-width: 350px;
+  }
+  .caixa {
+    max-width: 350px;
+    height: 100%;
+  }
+  input {
+    max-width: 350px;
+  }
+  .zoom {
+    max-width: 350px;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 350px;
+  }
+  .card {
+    max-width: 350px;
+  }
 }
