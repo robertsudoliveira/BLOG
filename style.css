@@ -146,7 +146,7 @@ input::placeholder {
     max-width: 600px;
   }
   input {
-    max-width: 361px;
+    max-width: 600px;
   }
   .zoom {
     max-width: 600px;
@@ -163,33 +163,67 @@ input::placeholder {
 /** Segundo breakpoint */
 @media (max-width: 600px) {
   .inicio {
-    min-width: 350px;
+    min-width: 370px;
   }
   .box {
-    max-width: 350px;
+    max-width: 370px;
   }
   .container {
-    max-width: 350px;
+    max-width: 370px;
   }
   #pesquisa {
-    max-width: 350px;
+    max-width: 370px;
   }
   .caixa {
-    max-width: 350px;
+    max-width: 370px;
     height: 100%;
+
   }
-  input {
-    max-width: 350px;
+
+  input{ 
+    max-width: 370px;
   }
   .zoom {
-    max-width: 350px;
+    max-width: 370px;
   }
   .nav {
     display: flex;
     justify-content: space-between;
-    max-width: 350px;
+    max-width: 370px;
   }
   .card {
-    max-width: 350px;
+    max-width: 370px;
+  }
+}
+@media (max-width: 370px) {
+  .inicio {
+    min-width: 280px;
+  }
+  .box {
+    max-width: 280px;
+  }
+  .container {
+    max-width: 280px;
+  }
+  #pesquisa {
+    max-width: 280px;
+  }
+  .caixa {
+    max-width:280px;
+    height: 100%;
+  }
+  input {
+    max-width:280px;
+  }
+  .zoom {
+    max-width:280px;
+  }0------------------------
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    max-width:280px;
+  }
+  .card {
+    max-width: 280px;
   }
 }
