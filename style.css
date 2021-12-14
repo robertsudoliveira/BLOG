@@ -177,10 +177,9 @@ input::placeholder {
   .caixa {
     max-width: 370px;
     height: 100%;
-
   }
 
-  input{ 
+  input {
     max-width: 370px;
   }
   .zoom {
@@ -195,6 +194,7 @@ input::placeholder {
     max-width: 370px;
   }
 }
+/** terceiro breakpoint */
 @media (max-width: 370px) {
   .inicio {
     min-width: 280px;
@@ -209,19 +209,19 @@ input::placeholder {
     max-width: 280px;
   }
   .caixa {
-    max-width:280px;
+    max-width: 280px;
     height: 100%;
   }
   input {
-    max-width:280px;
+    max-width: 280px;
   }
   .zoom {
-    max-width:280px;
-  }0------------------------
+    max-width: 280px;
+  }
   .nav {
     display: flex;
     justify-content: space-between;
-    max-width:280px;
+    max-width: 280px;
   }
   .card {
     max-width: 280px;
